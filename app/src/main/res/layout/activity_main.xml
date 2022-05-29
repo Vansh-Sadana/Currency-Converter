@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D1E8EC"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="#CAC0F8"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Currency Converter"
+            android:layout_gravity="center"
+             />
+
+
+        <EditText
+
+            android:id="@+id/currencytobeconertedET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="50dp"
+            android:hint="Enter some Value"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert from"
+            android:textSize="24sp"
+            android:layout_marginTop="25dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_spinner"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            >
+
+            <Spinner
+                android:id="@+id/convertedfrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck"></Spinner>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to"
+            android:textSize="24sp"
+            android:layout_marginTop="25dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_spinner"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/convertedto"
+                ></Spinner>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:hint="Result"
+            android:padding="15dp"
+            android:id="@+id/currencyconvertedTV"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONVERT"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn"
+            ></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
